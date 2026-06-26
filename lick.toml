@@ -1,0 +1,12 @@
+[package]
+name = "ripgrep"
+version = "14.1.0"
+description = "recursively search directories for a regex pattern"
+homepage = "https://github.com/vicvenscob/ripgrep"
+license = "MIT"
+url = "https://github.com/vicvenscob/ripgrep/archive/refs/heads/master.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/rg /usr/local/bin/rg"
+output_files = ["/usr/local/bin/rg"]
+
+[package.files]
